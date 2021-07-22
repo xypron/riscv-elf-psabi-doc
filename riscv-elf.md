@@ -1125,13 +1125,10 @@ code and data region.
 Symbol Name | Meaning
 :---------- | :-----------------------------------------------------------
 $d          | Start of a sequence of data.
-$d<N>       | Start of a sequence of N-byte data.
 $x          | Start of a sequence of instructions.
 $x<ISA>     | Start of a sequence of instructions with <ISA> extension.
 
-Mapping symbol for data(`$d`) means following region are data,
-and it has an optional length information, for more precisely present
-the original data layout.
+Mapping symbol for data(`$d`) means following region are data.
 
 Mapping symbol for instruction(`$x`) means following region are instructions,
 and it has an optional ISA string, which means following code region are using
