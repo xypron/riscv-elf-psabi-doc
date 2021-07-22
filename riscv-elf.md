@@ -1088,7 +1088,7 @@ default value is 16 for RV32I or RV64I, and 4 for RV32E.
 
 It will report erros if link object files with different Tag_RISCV_stack_align values.
 
-#### Tag_RISCV_arch, 5, NTBS=subarch
+#### <a name=riscv-attributes-arch></a> Tag_RISCV_arch, 5, NTBS=subarch
 Tag_RISCV_arch contains a string for the target architecture taken from
 the option `-march`. Different architectures will be integrated into a superset
 when object files are merged.
@@ -1135,6 +1135,10 @@ and it has an optional ISA string, which means following code region are using
 ISA different than the ISA recorded in arch attribute, the ISA information will
 used until next instruction mapping symobl; an instruction mapping symobl
 without without ISA string means using ISA configuration from ELF attribute.
+
+Format and rule of the optional ISA string is same as Tag_RISCV_arch, must
+having explicit version, more detailed rule please refer to
+[Attributes](#riscv-attributes-arch).
 
 The use case for mapping symbol for instruction(`$x`) with ISA information is
 used with ifunc, e.g. library are built with `rv64gc`, but few functions
