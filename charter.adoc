@@ -40,7 +40,7 @@ the psABI specification.
 
 4. Make space for custom extensions to avoid conflicts.
 
-5. Define and explore potential requirements for different ABI variantes.
+5. Define and explore potential requirements for different ABI variantes (e.g. for deeply embedded use-cases with fast-interrupt entry).
 
 == Document history
 [cols="<1,<2,<3,<4",options="header,pagewidth",]
