@@ -1140,7 +1140,7 @@ Format and rule of the optional ISA string is same as Tag_RISCV_arch, must
 having explicit version, more detailed rule please refer to
 [Attributes](#riscv-attributes-arch).
 
-The use case for mapping symbol for instruction(`$x`) with ISA information is
+NOTE: The use case for mapping symbol for instruction(`$x`) with ISA information is
 used with ifunc, e.g. library are built with `rv64gc`, but few functions
 like memcpy provide two version, one built with `rv64gc`, and one built with
 `rv64gcv`, and select by ifunc mechanism at run-time; however the arch
