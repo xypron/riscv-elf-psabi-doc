@@ -1134,7 +1134,7 @@ Mapping symbol for instruction(`$x`) means following region are instructions,
 and it has an optional ISA string, which means following code region are using
 ISA different than the ISA recorded in arch attribute, the ISA information will
 used until next instruction mapping symobl; an instruction mapping symobl
-without without ISA string means using ISA configuration from ELF attribute.
+without ISA string means using ISA configuration from ELF attribute.
 
 Format and rule of the optional ISA string is same as Tag_RISCV_arch, must
 having explicit version, more detailed rule please refer to
