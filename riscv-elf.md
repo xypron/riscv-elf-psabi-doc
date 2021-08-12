@@ -1148,6 +1148,10 @@ attribute is recording for minimal execution environment requirement, so the ISA
 information from arch attribute isn't enough for disassembler to disassemble the
 `rv64gcv` version correctly.
 
+NOTE: For toolchain implementation, linker are permit to merge the adjacency
+mapping symbol if they are exactly same type, and strip tool are permit to
+strip mapping symbol.
+
 # <a name=dwarf></a>DWARF
 
 Dwarf Register Numbers <a name=dwarf-register-numbers>
